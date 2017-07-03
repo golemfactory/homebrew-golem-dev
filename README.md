@@ -10,6 +10,11 @@ System Mac OS X 10.10 (Yosemite) or later.
 
 Public IP addres or connection via port (see [installation notes](https://github.com/golemfactory/golem/wiki/Installation)).
 
+## Uninstalling the official version
+```
+brew uninstall --force golem
+brew untap golemfactory/golem
+```
 
 ## Installation of Golem
 ```
