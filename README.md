@@ -4,7 +4,7 @@ homebrew-golem-dev
 Homebrew + Caskroom recipes for Golem.
 
 ## Requirements
-- __A public IP address or forwarded TCP ports: 40102, 40103 and 3282.__ (see [installation notes](https://github.com/golemfactory/golem/wiki/Installation)).
+- __A public IP address or forwarded TCP ports: 40102, 40103 and 3282__ (see [installation notes](https://github.com/golemfactory/golem/wiki/Installation)).
 
 - Mac OS X 10.10 (Yosemite) or later.
 
