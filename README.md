@@ -1,22 +1,24 @@
 homebrew-golem-dev
 =================
 
-Homebrew Cask for Golem.
+Homebrew + Caskroom recipes for Golem.
 
 ## Requirements
-System Mac OS X 10.10 (Yosemite) or later.
+- __A public IP address or forwarded TCP ports: 40102, 40103 and 3282.__ (see [installation notes](https://github.com/golemfactory/golem/wiki/Installation)).
 
-[Homebrew](https://brew.sh/) - The missing package manager for Mac OS.
+- Mac OS X 10.10 (Yosemite) or later.
 
-Public IP addres or connection via port (see [installation notes](https://github.com/golemfactory/golem/wiki/Installation)).
+- [Homebrew](https://brew.sh/) - The missing package manager for Mac OS.
 
-## Uninstalling the official version
+## Installation
+
+### 1. Uninstall the official version
 ```
 brew uninstall --force golem
 brew untap golemfactory/golem
 ```
 
-## Installation of Golem
+### 2. Install the development version
 ```
 brew tap golemfactory/golem-dev
 brew cask install golem
@@ -26,17 +28,16 @@ Please keep in mind that Golem depends on many packages. Therefore, the installa
 `docker-machine-driver-xhyve` package needs root owner and uid, therfore you will be asked for root password during installation.
 
 ## Running Golem
-Golem is still under development and is not signed with a valid signature.
-The first time you run Golem, your Mac OS X system will surely shout out that it cannot be opened because the software is from an undefined developer. To work around the problem please double click the application from Applications folder in Finder together with `control` key. Subsequently, click `open`.
-Every next time, just type `golem` into Spotlight or select `golem` from Applications.
+Type `golem` into Spotlight or select `golem` from Applications.
 
+__Golem is still under development and is not signed with a valid signature.
+The first time you run Golem, your Mac OS X system will surely shout out that it cannot be opened because the software is from an undefined developer. To work around the problem please double click the application from Applications folder in Finder together with `control` key. Subsequently, click `open`.__
 
 ## Reinstallation
 ```
 brew tap golemfactory/golem-dev
 brew cask reinstall golem
 ```
-
 
 ## Upgrading
 ```
