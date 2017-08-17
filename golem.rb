@@ -17,18 +17,26 @@ class Golem < Formula
   depends_on 'openssl'
   depends_on 'ethereum/ethereum/ethereum'
 
+  def exec *args
+    abort "Failed during: #{args.shell_s}" unless Kernel.exec *args
+  end
 
   def install
-
-    # docker-machine-driver-xhyve need root owner and uid
-    # https://github.com/zchee/docker-machine-driver-xhyve
-    system 'echo docker-machine-driver-xhyve need root owner and uid'
-    system "sudo chown root:wheel #{HOMEBREW_PREFIX}/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve"
-    system "sudo chmod u+s #{HOMEBREW_PREFIX}/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve"
 
     bin.install 'golemapp'
     bin.install 'golemcli'
     bin.install Dir['*']
 
   end
+
+  def post_install
+
+    # docker-machine-driver-xhyve need root owner and uid
+    # https://github.com/zchee/docker-machine-driver-xhyve
+
+    opoo "\n\n\nPLEASE EXECUTE THE FOLLOWING COMMANDS MANUALLY:
+    sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+    sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve \n\n\n"
+  end
+
 end
