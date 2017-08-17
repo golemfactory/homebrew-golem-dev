@@ -24,12 +24,11 @@ brew untap golemfactory/golem
 brew tap golemfactory/golem-dev
 brew cask install golem
 
+# docker-machine-driver-xhyve package needs root owner and a suid bit
 sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
 Please keep in mind that Golem depends on many packages. Therefore, the installation varies on the computer. Some of the packages may already be installed on your computer and the others have to be linked. A typical example is the `docker-machine` package, which provides `brew link docker-machine`. After linking, you must restart Golem installation.
-
-`docker-machine-driver-xhyve` package needs root owner and uid, therfore you will be asked for root password during installation.
 
 ## Running Golem
 Type `golem` into Spotlight or select `golem` from Applications.
