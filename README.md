@@ -14,8 +14,8 @@ Homebrew + Caskroom recipes for Golem.
 
 ### 1. Uninstall the official version
 ```
-brew uninstall --force golem
 brew cask uninstall golem
+brew uninstall --force golem
 brew untap golemfactory/golem
 ```
 
