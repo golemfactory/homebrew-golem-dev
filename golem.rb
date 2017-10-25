@@ -9,7 +9,6 @@ class Golem < Formula
   depends_on 'docker-machine'
   depends_on 'xhyve'
   depends_on 'docker-machine-driver-xhyve'
-  depends_on 'ipfs'
   depends_on 'gmp'
   depends_on 'openexr'
   depends_on 'freeimage'
