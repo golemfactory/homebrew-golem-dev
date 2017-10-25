@@ -1,6 +1,6 @@
 cask 'golem' do
   version '0.1.4'
-  sha256 '304e5c62eb0a393bf02b1901a11beec60240c8a576db3e423d7fc4017498836d'
+  sha256 'c00749e30da7d0877e8d09246d1e6b4f7c2698a446a11b6bc5475e87d65d35e5'
   url "https://github.com/golemfactory/golem-electron-dev/releases/download/#{version.major_minor_patch}/golem-electron-macos-#{version.major_minor_patch}.dmg"
 
   name 'Golem Worldwide Supercomputer'
