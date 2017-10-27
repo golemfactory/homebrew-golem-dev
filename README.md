@@ -13,13 +13,13 @@ Homebrew + Caskroom recipes for Golem.
 ## Installation
 
 ### 1. Uninstall an official version / development version
+* Remove cached Homebrew files `sudo rm -rd ~/Library/Caches/Homebrew/*`
+* Remove docker images `rm -rd /Users/<user>/.docker/machine/machines/golem/*`.
 ```
 brew cask uninstall golem
 brew uninstall --force golem
 brew untap golemfactory/golem
 ```
-* Remove cached Homebrew files `sudo rm -rd ~/Library/Caches/Homebrew/*`
-* Remove docker images `rm -rd /Users/<user>/.docker/machine/machines/golem/*`.
 
 ### 2. Install the development version
 ```
