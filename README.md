@@ -16,6 +16,7 @@ Homebrew + Caskroom recipes for Golem.
 * Remove cached Homebrew files `sudo rm -rd ~/Library/Caches/Homebrew/*`
 * Remove docker images `sudo rm -rd ~/.docker/machine/machines/golem/*`.
 ```
+brew cask uninstall golem-mainnet-launcher
 brew cask uninstall golem
 brew uninstall --force golem
 brew untap golemfactory/golem
@@ -51,6 +52,7 @@ brew update && brew upgrade
 
 ## Removing
 ```
+brew cask uninstall golem-mainnet-launcher
 brew cask uninstall golem
 brew uninstall golem
 ```
