@@ -2,8 +2,8 @@ cask 'golem' do
   name 'Golem Worldwide Supercomputer GUI'
   homepage 'https://github.com/golemfactory/golem-electron-dev/'
 
-  version '0.1.13'
-  sha256 '9aaff4affb59f9722cac72fc9d3d6a9ac95da041b706ae5a0cf45a6d60dd4f54'
+  version '0.1.15'
+  sha256 'fb687b9184f7b12bdb3a8a86fb709ce73c2e7f82f43c075b9e6a83b88a53fd95'
   url "https://github.com/golemfactory/golem-electron-dev/releases/download/#{version.major_minor_patch}/golem-electron-macos-#{version.major_minor_patch}.dmg"
 
   auto_updates true
