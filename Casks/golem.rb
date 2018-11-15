@@ -3,7 +3,7 @@ cask 'golem' do
   homepage 'https://github.com/golemfactory/golem-electron-dev/'
 
   version '0.1.17'
-  sha256 '7fea5ea410bb3cd80ca753e529f0f08787d1bb39c656b673acc730d1e2b44703'
+  sha256 '6a133670ecd12582ccee8d93b16ba1d8ca6f7de138e571d1d81b8ac4ad186ceb'
   url "https://github.com/golemfactory/golem-electron-dev/releases/download/#{version.major_minor_patch}/golem-electron-macos-#{version.major_minor_patch}.dmg"
 
   auto_updates true
