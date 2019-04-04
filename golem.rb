@@ -3,8 +3,8 @@ class Golem < Formula
   homepage 'https://github.com/golemfactory/golem-dev/'
 
   version '0.19.1'
-  sha256 '310e370bdcc2663419fd3dfdf0a66af148422665c9af2653671dbac8bdc9c6a0'
-  url "https://github.com/golemfactory/golem-dev/releases/download/#{version.major_minor_patch}/golem-#{version.major_minor_patch}-macOS.tar.gz"
+  sha256 '9aa93d1652060f845313099bfaabab74349905f76fe7a7875b17c7123abd1322'
+  url "https://github.com/golemfactory/golem-dev/releases/download/0.19.1/golem-0.19.1-macOS.tar.gz"
 
   depends_on 'gmp'
   depends_on 'openexr'
