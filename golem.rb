@@ -10,11 +10,11 @@ class Golem < Formula
   depends_on 'openexr'
   depends_on 'freeimage'
   depends_on 'golemfactory/hyperg/hyperg'
+  depends_on 'golemcli'
   depends_on 'openssl'
 
   def install
     bin.install 'golemapp'
-    bin.install 'golemcli'
     bin.install Dir['*']
 
   end
