@@ -5,7 +5,7 @@ class Golemcli < Formula
   stable do
     version '0.1.9'
     url 'https://github.com/golemfactory/golem-client/releases/download/v0.1.9/golemcli-osx-v0.1.9.tar.gz'
-    sha256 'f15db7cf4e9a6764ae54c9e603ed5408b329a92e8e7f3045d0576f7be74c7dd2'
+    sha256 '1aa8c3cb9ad3d58ba9baaf594b8425d8d574a8241be6cdd2cf2ed955578ed55d'
   end
 
   def install
