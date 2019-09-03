@@ -4,7 +4,7 @@ cask 'golem' do
 
   version '0.2.2'
   sha256 '29409efbd5224755e57da5962fba307bdcbaef8f246e9f5183b8a37c324bab98'
-  url "https://github.com/golemfactory/golem-electron-dev/releases/download/#{version.major_minor_patch}/golem-electron-beta-macos-#{version.major_minor_patch}.dmg"
+  url "https://golem-releases.cdn.golem.network/releases/0.20.2/components/golem-electron-beta-macos-#{version.major_minor_patch}.dmg"
 
   auto_updates true
   depends_on formula: 'golemfactory/golem-dev/golem'
